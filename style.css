@@ -27,6 +27,7 @@ h1 {
     border: 1px solid #ddd;
     border-radius: 4px;
     cursor: pointer;
+    margin-right: 5px;
 }
 .task-form button {
     padding: 8px 15px;
@@ -35,19 +36,38 @@ h1 {
     border: 2px solid #068e16;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .task-list {
     text-align: left;
+    max-height: 500px;
+    overflow-y: y;
+    transition: max-height 0.3s ease-in-out;
 }
-.btn-rm-tasks {
-    padding: 8px 15px;
-    background-color: rgb(255, 36, 36);
-    border-radius: 4px;
-    cursor: pointer;
+.task-list-item.removing {
+    max-height: 0;
 }
 .task-list-item {
+    display: flex;
+    align-items: center;
     margin-bottom: 5px;
     padding: 5px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+.task-list-item.removing {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.btn-rm-tasks {
+    padding: 4px 2px;
+    background-color: rgb(255, 36, 36);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.75em;
+    margin-left: auto;
 }
