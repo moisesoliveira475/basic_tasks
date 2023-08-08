@@ -4,7 +4,6 @@ body {
     background-color: #f2f2f2;
     margin: 0 
 }
-
 .container {
     max-width: 600px;
     margin: 0 auto;
@@ -46,6 +45,11 @@ h1 {
     overflow-y: y;
     transition: max-height 0.3s ease-in-out;
 }
+.task-list > h2 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+}
 .task-list-item.removing {
     max-height: 0;
 }
@@ -63,6 +67,13 @@ h1 {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
+.completed-task-list {
+    color: #068e16;
+}
+.completed-task-list > h2 {
+    margin: 0;
+    margin-bottom: 10px;
+}
 .btn-rm-tasks {
     padding: 4px 2px;
     background-color: rgb(255, 36, 36);
@@ -70,4 +81,15 @@ h1 {
     cursor: pointer;
     font-size: 0.75em;
     margin-left: auto;
+}
+.completed {
+
+}
+.btn-finish-task {
+    padding: 4px 2px;
+    background-color: rgb(43, 255, 36);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.75em;
+    margin-left: 29rem;
 }
