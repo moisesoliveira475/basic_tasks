@@ -67,6 +67,8 @@ function createTaskListItem(taskInputValue) {
 function completeTaskListItem(taskListItem) {
     taskListItem.classList.add(`completed`);
     const completedTaskList = document.getElementById(`completed-task-list`);
+    const finishButton = taskListItem.querySelector(`.btn-finish-task`);
+    taskListItem.removeChild(finishButton);
     completedTaskList.appendChild(taskListItem);
     taskCount--;
     updateTaskCount();

@@ -62,6 +62,8 @@ h1 {
     border-radius: 4px;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
+    background-color: #007bffa3;
+    border: 2px solid;
 }
 .task-list-item.removing {
     opacity: 0;
@@ -83,7 +85,8 @@ h1 {
     margin-left: auto;
 }
 .completed {
-
+    background-color: #0080004a;
+    border: 2px solid;
 }
 .btn-finish-task {
     padding: 4px 2px;
